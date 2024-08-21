@@ -25,7 +25,7 @@ function App() {
 
   return (
     <main className="flex justify-center items-center w-[100vw] h-[100vh] bg-dark-blue">
-      <div className="relative flex flex-col items-center text-center w-[540px] min-h-[330px] mx-4 rounded-2xl bg-dark-grey-blue">
+      <div className="relative flex flex-col items-center text-center w-[540px] mx-4 rounded-2xl bg-dark-grey-blue">
         <h1 className="font-manrope font-bold tracking-[0.2em] text-xs lg:text-sm text-neon-green pt-12">ADVICE #{id}</h1>
         <p className="font-manrope font-bold lg:leading-9 text-2xl lg:text-[28px] text-light-cyan p-6 lg:pb-10 lg:px-10">"{quote}"</p>
         <img src={dividerD} alt="Divider for desktop" className="hidden lg:block lg:pb-16" />
