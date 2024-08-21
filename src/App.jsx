@@ -10,18 +10,17 @@ function App() {
   const [userRequest, setUserRequest] = useState(false);
 
   useEffect(() => {
-    fetch("https://api.adviceslip.com/advice")
+    fetch("https://api.adviceslip.com/advice", {cache: "no-store"})
     .then((response) => response.json())
     .then((response) => {
       setId(response.slip.id)
       setQuote(response.slip.advice)
-      setUserRequest(false);
     })
     .catch((error) => console.log(error));
   }, [userRequest])
 
   function handleClick() {
-    setUserRequest(true);
+    setUserRequest(!userRequest);
   }
 
   return (
